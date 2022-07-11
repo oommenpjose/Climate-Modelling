@@ -3,7 +3,7 @@ module boundary
     contains
     real function f_initial(x)
         real,intent(in) :: x
-        f_initial=-sin(x)
+        f_initial=sin(x)
     end function f_initial
 end module boundary
 module heateqn
