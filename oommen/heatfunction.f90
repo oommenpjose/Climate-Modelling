@@ -18,7 +18,7 @@ module heateqn
         real :: dt,dx,s
         real :: p
         integer :: i,j
-        dx=(x0-xa)/n
+        dx=(xa-x0)/n
         dt=t/m
         s=k*dt/(dx**2)
         p=x0
