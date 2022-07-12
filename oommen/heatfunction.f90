@@ -43,7 +43,7 @@ program pde
     implicit none
     integer:: i,j
     integer,parameter :: n=100,m=3600
-    real,parameter :: pi=4.*atan(1.), x0=0, xa=pi, k=0.111, t=12
+    real,parameter :: pi=4.*atan(1.), x0=0, xa=pi, k=0.041, t=120
     real,dimension(n+1,m+1) :: sol
     sol=solution(n,m,x0,xa,t,k)
     open(1, file = 'data1.dat', status = 'new')
