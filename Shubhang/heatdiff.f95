@@ -37,9 +37,10 @@ program heatdiff
      C(i,j)=1-C(i,j)
     60 end do
    50 end do
+   open(1, file = 'data1.dat', status = 'new')
    do 30 j=1,n
     do 40 i=1,m
-     write(*,*) i,j,A(i,j)
+     write(1,*) i,j,A(i,j)
      B(i,j)=A(i,j)
     40 end do
    30 end do
