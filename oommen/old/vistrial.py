@@ -16,7 +16,7 @@ fragment = """
         }
         """
 program = gloo.Program(vertex, fragment)
-program[2] = np.c_[
+program['a_position'] = np.c_[
                 np.linspace(-1.0, +1.0, 1000),
                 np.random.uniform(-0.5, +0.5, 1000)]
 @c.connect
